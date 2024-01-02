@@ -1,0 +1,17 @@
+<%- include("layout/header") %>
+
+
+<div class="addform">
+    <div class="main_form">user add form</div>
+
+    <form action = "/api/users" method="post" id="add_user">
+        Name:<input type = "text" class= "uname"  name="name">
+        Phone number: <input type = "tel" class="pnumber" name ="phone">
+        Email id: <input type = "text" class="email_Id"  name="email">
+        Image: <input type = "file" class="uimage" name="image">
+
+        <input type="submit" name ="submit" class= "sub">
+    </form>
+</div>
+
+<%- include("layout/footer") %>

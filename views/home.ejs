@@ -1,0 +1,44 @@
+
+    <%- include("layout/header") %>
+
+    <div style="overflow-x: auto;">
+        <form action="/"method="post">
+    <table class ="tmain">
+        <thead>
+        <tr class="tbmain">
+            
+            <th>id</th>
+        <th>image</th>
+        <th>name</th>
+        <th>phone number</th>
+        <th>email</th>
+        <th>action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for(let i = 0;i< users.length;i++){ %>       
+     <tr>
+        <td><%= users[i]._id %></td>
+        <td>photo</td> 
+        <td><%= users[i].name %></td>
+        <td><%= users[i].phone %></td> 
+        <td><%= users[i].email %></td>
+         <td>
+            <li><a href ="/edit?id=<%= users[i]._id %>" class="upd" value="">update</a></li>
+          <li> <a href="/delete?id=<%= users[i]._id %>"  data-id="<%= users[i]._id %>"  class="del" value = "">delete</a> </li>
+          
+           
+            </td>
+</tr>
+<% } %>
+</tbody>
+
+</table>
+</form>
+
+</div>
+
+        
+
+<%- include("layout/footer") %>
+

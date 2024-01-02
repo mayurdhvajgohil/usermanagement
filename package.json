@@ -1,0 +1,31 @@
+{
+  "name": "user-management",
+  "version": "1.0.0",
+  "description": "user_management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server nodemon index.js",
+    "type": "module",
+    "build": "webpack --env production"
+  },
+  "keywords": [
+    "user"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.0.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.0.2",
+    "syntax-error": "^1.4.0"
+  },
+  "devDependencies": {
+    "express-session": "^1.17.3"
+  }
+}

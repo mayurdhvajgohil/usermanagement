@@ -1,0 +1,18 @@
+<%- include("layout/header") %>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
+
+<div class="addform">
+    <div class="main_form">User Update form</div>
+
+    <form  method="post"  id="edit_userid">
+        <input type="hidden" value= "<%= user._id %>">
+        Name:<input type = "text" class= "uname"value="<%= user.name %>"  name="name">
+        Phone number: <input type = "tel" class="pnumber"value="<%= user.phone %>" name ="phone">
+        Email id: <input type = "text" class="email_Id" value="<%= user.email %>" name="email">
+        Image: <input type = "file" class="uimage" value="img" name="uimage">
+
+        <button type="submit" name ="submit" class= "sub">save</button>
+    </form>
+</div>
